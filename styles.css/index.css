@@ -56,3 +56,83 @@ body {
 .header__menu--profile img {
     margin: 0 15px 0 0;
 }
+
+.main{
+    height: 300px;
+}
+.main__title{
+    font-size: 30px;
+    color: white;
+}
+
+.input{
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 25px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+.carrousell{
+    width: 100%;
+    /* Generate scroll */
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+
+.carrousell__container{
+    white-space: nowrap;
+    margin: 70px 0;
+    padding-bottom: 10px;
+}
+.carrousell-item{
+    background-color: rgba(181, 73, 91, 1);
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carrousell-item:hover ~ .carrousell-item{
+    transform: translate3d(100px, 0, 0);
+}
+.carrousell__container:hover .carrousell-item{
+    opacity: 0.3;
+}
+.carrousell__container:hover .carrousell-item:hover{
+    transform: scale(1.5);
+    opacity: 0;
+}
+.carrousell-item__img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carrousell-item{
+    background-image: linear-gradient( 109.1deg, rgba(181, 73, 91, 1) 7.1%, rgba(225, 107, 140, 1) 86.4%);
+    font-size: 10px;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
